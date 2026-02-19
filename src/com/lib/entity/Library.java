@@ -3,25 +3,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    private List<Member> members = new ArrayList<>();
-
+    private List<Librarian>librarian=new ArrayList<>();
     // Add member to library
-    public void addMember(Member member) {
-        members.add(member);
+    public void addMember(Librarian librarian) {
+        librarian.add(librarian);
     }
 
-    public List<Member> getMembers() {
-        return members;
+    public List<Librarian> getLibrarian() {
+        return librarian;
     }
 
     // Show members and their books
-    public void showLibraryStatus() {
-        for (Member m : members) {
-            System.out.println("Member: " + m.getName());
-            System.out.println("Borrowed books:");
-            for (Book b : m.getBorrowedBooks()) {
-                System.out.println("  - " + b.getName());
-            }
-        }
-    }
 }

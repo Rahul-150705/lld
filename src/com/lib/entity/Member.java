@@ -28,5 +28,11 @@ public class Member {
 	public void borrowBook(Book book) {
         borrowedBooks.add(book);
     }
+	public void showLibraryStatus() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 	
 }
